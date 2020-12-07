@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/YELLOW_LIGHT"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/login_edt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:paddingLeft="8dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_edittext_rounded"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        />
+
+    <EditText
+        android:id="@+id/login_edt_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:paddingLeft="8dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edittext_rounded"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/login_edt_email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/login_edt_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_edt_email" />
+
+    <Button
+        android:id="@+id/login_btn_enter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/log_message"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/bg_buttons_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/login_edt_password"
+        app:layout_constraintStart_toStartOf="@+id/login_edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_edt_password" />
+
+    <TextView
+        android:id="@+id/txt_login_registerUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_message"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login_btn_enter"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/login_btn_enter"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn_enter"
+        app:layout_constraintVertical_bias="0.27" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

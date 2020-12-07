@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Whats_Clone</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Senha</string>
+    <string name="log_message">Entrar</string>
+    <string name="register_message"> "Não possui cadastro ? Clique Aqui ! "</string>
+    <string name="username_hint">Nome</string>
+    <string name="insert">Cadastrar</string>
+    <string name="photo_hint">"Insira sua foto "</string>
+    <string name="contacts">Contatos</string>
+    <string name="logout">Logout</string>
+    <string name="msg_hint">Escreva aqui ...</string>
+    <string name="send_msg">Enviar</string>
+</resources>
